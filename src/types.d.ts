@@ -63,3 +63,18 @@ export interface IUser {
   language: string;
   currency: string;
 }
+
+interface ISignUpVariables {
+  name: string;
+  username: string;
+  email: string;
+  password: string;
+}
+
+interface ISignUpSuccess {
+  success: string;
+}
+
+interface ISignUpError {
+  fail: string;
+}
