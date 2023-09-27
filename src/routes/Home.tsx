@@ -1,9 +1,8 @@
-import { Box, Grid, HStack, Skeleton, SkeletonText } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
-import Room from "../components/Room";
-import RoomSkeleton from "../components/RoomSkeleton";
+import { Grid } from "@chakra-ui/react";
 import { useQuery } from "@tanstack/react-query";
 import { getRooms } from "../api";
+import Room from "../components/Room";
+import RoomSkeleton from "../components/RoomSkeleton";
 
 interface IPhoto {
   pk: string;
@@ -57,9 +56,9 @@ export default function Home() {
       ) : null}
       {data?.map((room) => (
         <Room
-          imageUrl={
-            room.photos[0].file ?? "https://source.unsplash.com/random/450x450"
-          }
+          key={room.pk}
+          pk={room.pk}
+          imageUrl={room.photos[0].file}
           name={room.name}
           rating={room.rating}
           city={room.city}
