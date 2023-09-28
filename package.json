@@ -14,6 +14,7 @@
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.54",
     "@types/react": "^18.2.23",
+    "@types/react-calendar": "^3.5.2",
     "@types/react-dom": "^18.2.7",
     "axios": "^1.5.1",
     "framer-motion": "^10.16.4",
@@ -21,10 +22,12 @@
     "react": "^18.2.0",
     "react-calendar": "^4.6.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-hook-form": "^7.46.2",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
+    "start": "^5.1.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -53,6 +56,7 @@
     ]
   },
   "devDependencies": {
-    "@types/js-cookie": "^3.0.4"
+    "@types/js-cookie": "^3.0.4",
+    "@types/react-helmet": "^6.1.7"
   }
 }
